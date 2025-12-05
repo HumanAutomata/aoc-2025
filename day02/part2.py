@@ -8,7 +8,7 @@ def validate(number):
     """Determine if a number is invalid"""
 
     # check different length sequences
-    for length in range(1, len(number)):
+    for length in range(len(number) // 2, 0, -1):
 
         # skip non-divisor length
         if len(number) % length != 0:
